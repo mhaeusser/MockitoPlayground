@@ -11,12 +11,7 @@ public class CalculatorTest {
 
     @Before
     public void setup() {
-        calc = new Calculator(new CalculatorService() {
-            @Override
-            public int add(int i, int j) {
-                return i+j;
-            }
-        });
+        calc = new Calculator((i, j) -> i+j);
     }
 
     @Test
