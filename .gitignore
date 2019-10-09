@@ -2,8 +2,6 @@
 
 *.log
 
-.idea
-
 *.jar
 *.war
 *.nar
